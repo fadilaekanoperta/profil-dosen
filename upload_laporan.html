@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Upload Laporan</title>
+
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/upload_laporan.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="up-laporan">
+		<form>
+			<div class="row">
+				<div>
+					<ul class="nav nav-tabs">
+					<li class="active"><a href="#">Upload Laporan</a></li>
+					<li><a href="view_upload_laporan.php">Detail Laporan</a></li>
+				</ul>
+				</div><br>
+				<div class="col-sm-6">
+					<div class="form-group">
+					<label class="col-sm-4 text-left">Nama File Laporan</label>
+					<label class="col-sm-1 text-right">:</label>   
+					<div>
+						<div class="input-group">
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-file"></span>
+							</div>
+							<input type="text" class="form-control" placeholder="Nama File Laporan">
+						</div>
+					</div><br>
+					<label class="col-sm-4 text-left" for="sm">Semester</label>
+					<label class="col-sm-1 text-right">:</label>
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Semester
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#">8</a></li>
+							</ul>
+					</div><br>
+					<label class="col-sm-4 text-left">Pilih file dari komputer</label>
+					<label class="col-sm-1 text-right">:</label>
+					<input type="file"><br>
+					<label class="col-sm-4 text-left">Atau tahan dan lepas file di bawah</label>
+					<label class="col-sm-1 text-right">:</label>
+				</div>
+				</div>
+			</div>
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="upload-drop-zone">
+					Tahan dan Lepas disini
+				</div>
+				<div class="col-sm-offset-11">
+					<button type="submit" class="btn btn-primary">Kirim file</button>
+				</div>
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>
